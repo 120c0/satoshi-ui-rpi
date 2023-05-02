@@ -10,8 +10,7 @@ echo "vim.cmd[[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
-
-	use 'Matt-Gleich/blackbird.vim'
+	use 'noahfrederick/vim-hemisu'
 end)" | tee lua/pluggin.lua
 
 echo "vim.cmd[[
@@ -22,11 +21,9 @@ echo "vim.cmd[[
 	set tabstop=2
 	set shiftwidth=2
 	set autoindent
-	set cc=80
 	set cursorline
 	set noswapfile
 	set termguicolors
-
 ]]" | tee lua/setting.lua
 
 echo "require 'setting'
